@@ -1,0 +1,47 @@
+{
+  "geode": "5.2.0",
+  "gd": {"android": "2.2081", "win": "2.2081"},
+  "version": "v1.0.0",
+  "id": "nytelyte.icon_kit_utilities",
+  "name": "Icon Kit Utilities",
+  "developer": "NyteLyte",
+  "description": "Adds extra features to the icon kit.",
+  "dependencies": {
+    "geode.node-ids": {"version": ">=v1.22.0", "required": true},
+    "geode.devtools": {"version": ">=v1.13.1", "required": false},
+    "nytelyte.icon_kit_filter_and_sort": {"version": ">=1.1.0", "required": false}
+  },
+  "links": {"source": "https://github.com/nytelytee/geode-icon-kit-utilities.git"},
+  "resources": {
+    "files": ["resources/examples/*.png"]
+  },
+  "settings": {
+    "hide-player-options-button":      {"name": "Hide Player Options Button",      "type": "bool", "default": false},
+    "disable-shift-clicking-on-icons": {"name": "Disable Shift Clicking on Icons", "type": "bool", "default": false},
+    "disable-item-info-popup-arrows":  {"name": "Disable Item Info Popup Arrows",  "type": "bool", "default": false},
+    "disable-item-info-popup-animation-name-changes": {
+      "name": "Disable Item Info Popup Animation Name Change",
+      "type": "bool",
+      "default": false,
+      "description": "Normally the animations are called 'Items' and they go from 18 to 21; this mod renames them to 'Animations' and makes them go from 1 to 3. Toggle to disable this."
+    },
+    "disable-item-info-popup-wraith-icon-fixes": {
+      "name": "Disable Item Info Popup Wraith Icon Fixes",
+      "type": "bool",
+      "default": false,
+      "description": "RobTop reserved icons for the Wraith, and then ended up giving unreserved icons as Wraith code rewards; this mod renames them in the Icon Kit. Toggle to disable this."
+    },
+    "unfix-supporter-icon-dialog-box-bug": {
+      "name": "Unfix Supporter Icon Dialog Box Bug",
+      "type": "bool",
+      "default": false,
+      "description": "This mod fixes the bug where you are able to open the dialog box for the supporter icon after already unlocking it. Toggle to disable this."
+    },
+    "unfix-meltdown-supporter-icon-dialog-box-bug": {
+      "name": "Unfix Meltdown Supporter Icon Dialog Box Bug",
+      "type": "bool",
+      "default": false,
+      "description": "The above bug also happens on the Meltdown Supporter icon when Lite Ad Chests adds the ability to unlock it. Toggle to disable this. Note: The option is separate because Colon intentionally added the bug to mirror vanilla behavior. Since this mod fixes the vanilla behavior, it also fixes the same for Meltdown Supporter, for consistency."
+    }
+  }
+}
