@@ -1,7 +1,7 @@
 {
-  "geode": "5.2.0",
+  "geode": "5.3.0",
   "gd": {"android": "2.2081", "win": "2.2081", "mac": "2.2081", "ios": "2.2081"},
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "id": "nytelyte.icon_kit_utilities",
   "name": "Icon Kit Utilities",
   "developer": "NyteLyte",
@@ -31,14 +31,20 @@
       "default": false,
       "description": "RobTop reserved icons for the Wraith, and then ended up giving unreserved icons as Wraith code rewards; this mod renames them in the Icon Kit. Toggle to disable this."
     },
+    "disable-item-info-popup-221-icon-fixes": {
+      "name": "Disable Item Info Popup 2.21 Icon Fixes",
+      "type": "bool",
+      "default": false,
+      "description": "If you have a \"2.21\" icon unlocked (either the ones that are actually Wraith icons or if you have icon hack), the text inside of the icon info popup will disappear. This mod fixes that issue. Toggle to disable this."
+    },
     "unfix-supporter-icon-dialog-box-bug": {
-      "name": "Unfix Supporter Icon Dialog Box Bug",
+      "name": "Don't Fix Supporter Icon Dialog Box Bug",
       "type": "bool",
       "default": false,
       "description": "This mod fixes the bug where you are able to open the dialog box for the supporter icon after already unlocking it. Toggle to disable this."
     },
     "unfix-meltdown-supporter-icon-dialog-box-bug": {
-      "name": "Unfix Meltdown Supporter Icon Dialog Box Bug",
+      "name": "Don't Fix Meltdown Supporter Icon Dialog Box Bug",
       "type": "bool",
       "default": false,
       "description": "The above bug also happens on the Meltdown Supporter icon when Lite Ad Chests adds the ability to unlock it. Toggle to disable this. Note: The option is separate because Colon intentionally added the bug to mirror vanilla behavior. Since this mod fixes the vanilla behavior, it also fixes the same for Meltdown Supporter, for consistency."

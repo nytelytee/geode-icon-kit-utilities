@@ -5,6 +5,8 @@ using namespace geode::prelude;
 
 //class MoreInfoPopup : public CCObject {};
 
+// i'm doing it weirdly like this to be able to modify More Icons popups as well
+// once More Icons comes out
 bool HookedCCLayerColor::initWithColor(ccColor4B const& color, GLfloat width, GLfloat height) {
   if (!CCLayerColor::initWithColor(color, width, height)) return false;
 

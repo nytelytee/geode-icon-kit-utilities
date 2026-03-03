@@ -10,4 +10,10 @@ struct HookedItemInfoPopup : geode::Modify<HookedItemInfoPopup, ItemInfoPopup> {
   $override
   bool init(int, UnlockType);
 
+  cocos2d::CCLabelBMFont* addAchievementLabel(const char*);
+  TextArea* addDescriptionArea(const char*);
+  const char* pickRandomLabel();
+  const char* pickRandomAchievementLabel();
+  cocos2d::CCLabelBMFont* addRandomLabel(const char*);
+
 };
