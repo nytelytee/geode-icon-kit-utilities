@@ -8,6 +8,7 @@ Adds new features to the icon kit and fixes some bugs:
   - switch spider teleport color
   - switch dash fire color
   - switch wave trail color
+- add glow col2 button (check settings for details)
 - shift-click an icon/color to open its info popup without selecting it (mobile version planned)
 - arrows in icon info popups, so you can easily go to the next and previous icons without closing and reopening the popup
 - fixes the bug where the supporter icon dialog box shows up even after unlocking the icon

@@ -1,3 +1,6 @@
+# v1.1.1
+- update mod description to actually include the feature i added in v1.1.0
+
 # v1.1.0
 - add glow col2 button (see settings for explanation); thanks to Aktimoose for telling me about this
 
