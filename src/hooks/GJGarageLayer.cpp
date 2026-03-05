@@ -18,6 +18,11 @@ void HookedGJGarageLayer::onModify(auto& self) {
 }
 
 void HookedGJGarageLayer::showUnlockPopup(int itemID, UnlockType unlockType) {
+  if (itemID == -1 && unlockType == UnlockType::Col2) {
+    Mod* separateDualIcons = Loader::get()->getLoadedMod("weebify.separate_dual_icons");
+    bool secondPlayerSelected = separateDualIcons && separateDualIcons->getSavedValue("2pselected", false);
+    itemID = secondPlayerSelected ? separateDualIcons->getSavedValue("color2", 1) : GameManager::get()->getPlayerColor2();
+  }
   bool fixSupporterIconDialogBoxBug = !Mod::get()->getSettingValue<bool>("unfix-supporter-icon-dialog-box-bug");
   bool fixMeltdownSupporterIconDialogBoxBug = !Mod::get()->getSettingValue<bool>("unfix-meltdown-supporter-icon-dialog-box-bug");
   if (unlockType != UnlockType::Cube)

@@ -38,7 +38,17 @@ constexpr IconType UNLOCK_TO_ICON[] = {
 };
 
 #define IS_NORMAL_ICON_TYPE(iconType) (iconType <= IconType::Jetpack)
-#define IS_NORMAL_UNLOCK_TYPE(unlockType) (unlockType <= UnlockType::Spider || unlockType == UnlockType::Swing || unlockType == UnlockType::Jetpack)
+#define IS_NORMAL_UNLOCK_TYPE(unlockType) (\
+  unlockType == UnlockType::Cube ||\
+  unlockType == UnlockType::Ship ||\
+  unlockType == UnlockType::Bird ||\
+  unlockType == UnlockType::Ball ||\
+  unlockType == UnlockType::Dart ||\
+  unlockType == UnlockType::Spider ||\
+  unlockType == UnlockType::Robot ||\
+  unlockType == UnlockType::Swing ||\
+  unlockType == UnlockType::Jetpack\
+)
 
 constexpr const char * ICON_NAMES[] = {
   [static_cast<int>(UnlockType::Cube)] = "Cube",

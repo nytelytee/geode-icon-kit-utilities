@@ -97,6 +97,7 @@ void HookedFLAlertLayer::onPrevNext(CCObject *sender) {
   std::span<const std::pair<const int, const UnlockType>>::iterator p_first = iconSpan.begin();
   std::span<const std::pair<const int, const UnlockType>>::iterator p_last = iconSpan.end() - 1;
   std::span<const std::pair<const int, const UnlockType>>::iterator p_current = std::find(p_first, p_last + 1, std::pair<int, UnlockType>{itemID, unlockType});
+  if (p_current == p_last + 1) return;
   if (action == ItemInfoPopupButtonAction::Next) {
     if (p_current != p_last) newItem = *(p_current+1);
     if (p_current == p_last) newItem = *p_first;

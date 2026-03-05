@@ -1,3 +1,8 @@
+# v1.1.2
+- fix crashes with arrows for color popups
+- open player 2 color popup when opening col2 glow's popup
+- position cursor onto col2 glow color properly
+
 # v1.1.1
 - update mod description to actually include the feature i added in v1.1.0
 

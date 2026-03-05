@@ -47,11 +47,16 @@ void HookedCharacterColorPage::createColorMenu() {
   player2GlowButton->setVisible(false);
   player2GlowButton->setEnabled(false);
   m_fields->player2GlowButton = player2GlowButton;
+  
+  // maybe this should be done after init, but the cursors already seem to exist here
+  // i assume this function gets called during init, but the cursors got initialized before it got called
+  // so this should be fine
+  CCNode* glowCursor = static_cast<CCNode*>(m_cursors->objectAtIndex(2));
+  glowCursor->setPosition(m_buttonMenu->convertToWorldSpace(m_fields->player2GlowButton->getPosition()));
 }
 
 void HookedCharacterColorPage::onMode(CCObject* sender) {
   CharacterColorPage::onMode(sender);
-
 
   if (!m_fields->player2GlowButton || m_fields->player2GlowButton->getChildrenCount() < 1) return;
 
