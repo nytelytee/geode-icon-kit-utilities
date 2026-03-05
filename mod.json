@@ -1,7 +1,7 @@
 {
   "geode": "5.3.0",
   "gd": {"android": "2.2081", "win": "2.2081", "mac": "2.2081", "ios": "2.2081"},
-  "version": "v1.0.1",
+  "version": "v1.1.0",
   "id": "nytelyte.icon_kit_utilities",
   "name": "Icon Kit Utilities",
   "developer": "NyteLyte",
@@ -16,7 +16,13 @@
     "files": ["resources/examples/*.png"]
   },
   "settings": {
-    "hide-player-options-button":      {"name": "Hide Player Options Button",      "type": "bool", "default": false},
+    "hide-player-options-button": {"name": "Hide Player Options Button",      "type": "bool", "default": false},
+    "hide-glow-col2-button": {
+      "name": "Hide Glow Col2 Button",
+      "type": "bool",
+      "default": false,
+      "description": "In vanilla, setting the player's glow color to -1 makes it copy the 2nd player color. This is a way to have different colors for glows per player without having to install Separate Dual Icons. This option is hidden, and as far as I know, the only way to get it is to modify your save file. This mod unlocks the option and shows it in the glow section in the character color page. Toggle to hide the button. Thanks to Aktimoose for telling me about this."
+    },
     "disable-shift-clicking-on-icons": {"name": "Disable Shift Clicking on Icons", "type": "bool", "default": false},
     "disable-item-info-popup-arrows":  {"name": "Disable Item Info Popup Arrows",  "type": "bool", "default": false},
     "disable-item-info-popup-animation-name-changes": {

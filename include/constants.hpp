@@ -153,6 +153,7 @@ constexpr std::pair<const int, const UnlockType> COLOR_1_UNLOCK_ORDER[] = {
   // the grayscale group
   {12, UnlockType::Col1}, {91, UnlockType::Col1}, {17, UnlockType::Col1}, {102, UnlockType::Col1}, {18, UnlockType::Col1}, {94, UnlockType::Col1}, {15, UnlockType::Col1},
 };
+
 constexpr std::pair<const int, const UnlockType> COLOR_2_UNLOCK_ORDER[] = {
   // the red group
   {51, UnlockType::Col2}, {19, UnlockType::Col2}, {48, UnlockType::Col2}, {9, UnlockType::Col2},
